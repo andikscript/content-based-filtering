@@ -58,11 +58,14 @@ func ProcessAlgorithm(text string, idUser string) {
 				}
 			}
 
+			fmt.Println("harga print")
 			// print
 			showProduct(group)
 
 			initial = false
 		}
+
+		fmt.Println("harga")
 	}
 
 	// found merk
@@ -87,6 +90,7 @@ func ProcessAlgorithm(text string, idUser string) {
 				}
 			}
 		}
+		fmt.Println("merk")
 	}
 
 	if initial {
@@ -94,6 +98,7 @@ func ProcessAlgorithm(text string, idUser string) {
 		sorting := sortResult(filter)
 		// print
 		showProduct(sorting)
+		fmt.Println("print")
 	}
 
 	if checkWord {
